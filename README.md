@@ -1,5 +1,5 @@
 # Vue-2.0-shoppingCart
-# vue2.0-shoppingCart
+
 ##案例组成部分
 - 创建Vue实例
 - 通过v-for指令渲染产品数据
