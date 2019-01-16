@@ -67,10 +67,10 @@ var vm = new Vue({
     },
     addAddress: function (item) {
       this.fromStatus = 0;
-      var a = this.addressList[this.addressList.length-1];
+      var checkAddress = this.addressList[this.addressList.length-1];
       // alert(a.addressId++)
      this.addressList.push({
-       addressId: a.addressId++,
+       addressId: checkAddress.addressId++,
        userName: this.name,
        streetName: this.streetName,
        tel: this.phone
