@@ -92,10 +92,16 @@ var vm = new Vue({
       })
        
     },
-
+    empty:function () {
+      this.fromStatus = "";
+      this.name =" ";
+      this.phone = "";
+      this.streetName = "";
+    } ,
     saveFrom: function () {
       if(this.fromStatus == 0){
         this.addAddress();
+        this.empty();
       }
       if(this.fromStatus == 1) {
         // alert(this.checkIndex);
@@ -106,7 +112,7 @@ var vm = new Vue({
          tel: this.phone
        });
         this.editAddress();
-       
+        this.empty();
         this.insFlag = false;
         
       }
